@@ -13,11 +13,12 @@ const StreamAnimatedText = ({ text }: { text: string }) => {
       opacity: 1,
       transform: "scale(1)",
     },
+    immediate: true,
     config: {
       mass: 1,        // Increased mass for more stability
-      tension: 320,   // Increased tension for less wobble
-      friction: 14,   // Increased friction for less springiness
-      velocity: 0,    // Removed initial velocity
+      tension: 280,   // Increased tension for less wobble
+      friction: 20,   // Increased friction for less springiness
+      // velocity: 0,    // Removed initial velocity
       clamp: true,    // Prevent overshooting
     },
   });
@@ -74,7 +75,7 @@ const StreamAnimatedText = ({ text }: { text: string }) => {
     });
 
     animationTimeoutRef.current = timeouts;
-  }, [letters.length, trail, cleanupTimeouts]);
+  }, [letters.length, trail, cleanupTimeouts, middleIndex]);
 
   useEffect(() => {
     return () => cleanupTimeouts();
