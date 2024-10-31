@@ -13,6 +13,11 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      // obviously: ["Obviously Variable", "sans-serif"],
+      bubbleLove: ["Bubble Love Demo", "sans-serif"],
+      dinoko: ["Dinoko-Regular", "sans-serif"],
+    },
   },
   plugins: [],
 };
