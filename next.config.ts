@@ -14,9 +14,9 @@ const nextConfig: NextConfig = {
   },
   images: {
     unoptimized: false,
-    domains: [], // Add any external image domains if needed
+    remotePatterns: [],
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? undefined : undefined,
+  output: 'standalone',
 };
 
 export default nextConfig;

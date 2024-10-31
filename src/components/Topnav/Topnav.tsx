@@ -11,7 +11,7 @@ export default function Topnav() {
       <header className="flex flex-col left">
         <BasicAnimatedElement>
           <Image 
-            src="/FUNKENKERN/logo.svg"
+            src="/logo.svg"
             alt="Wimp Logo"
             width={144}
             height={144}
